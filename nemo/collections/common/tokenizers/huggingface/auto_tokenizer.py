@@ -91,7 +91,6 @@ class AutoTokenizer(TokenizerSpec):
             raise ValueError(
                 f'Unable to instantiate HuggingFace AUTOTOKENIZER for {pretrained_model_name}. Exception: {e}'
             )
-
         self.original_vocab_size = len(self.tokenizer)
         special_tokens_dict = {}
 
